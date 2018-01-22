@@ -39,7 +39,7 @@ end function add
 
 ## Generate Python module from Fortran code
 
-Change to the `fortran` directory and build a Python extension module:
+Change to the `fortran` directory of this FortranFromPython repository that you cloned and build a Python extension module:
 
 ```
 f2py -c -m add_two_numbers add_two_numbers.f90
