@@ -11,12 +11,6 @@ Install `scipy` package. It includes the `f2py` utility that we will use.
 pip3 install scipy
 ```
 
-Install `pytest` to run the unit tests:
-
-```
-pip3 install pytest
-```
-
 Clone this repository.
 
 ```
@@ -59,7 +53,11 @@ python3
 
 ## Run Fortran code from a unit test
 
-The Fortran code is also executed from the unit test. To run the test, run `pytest` from the root directory.
+The Fortran code is also executed from the unit test.
+
+* Install `pytest`: `pip3 install pytest`.
+
+* Run the test with `pytest` command from the root directory of this repository.
 
 ## Reference
 
