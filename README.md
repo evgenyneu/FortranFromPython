@@ -32,11 +32,13 @@ end function add
 
 ## Generate Python module from Fortran code
 
-Change to the `fortran` and build a Python extension module from fortran code:
+Change to the `fortran` directory and build a Python extension module:
 
 ```
 f2py -c -m add_two_numbers add_two_numbers.f90
 ```
+
+## Run Fortran code from Python
 
 It will generate a module file. To check that it is working, open python console from the `fortran` directory:
 
@@ -48,7 +50,7 @@ python3
 42
 ```
 
-## Run the unit test
+## Run Fortran code from a unit test
 
 The Fortran code is also executed from the unit test. To run the test, run `pytest` from the root directory.
 
