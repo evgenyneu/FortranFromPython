@@ -1,6 +1,6 @@
-# Running Fortran code from Python
+# Running Fortran function from Python
 
-This is a collection of examples that show how to run Fortran code from Python.
+This example shows how to run Fortran function from Python.
 
 
 ## Setup
@@ -17,6 +17,19 @@ Install `pytest` to run the tests:
 pip3 install pytest
 ```
 
+## Fortran function
+
+We have a simple Fortran function that receives two integer numbers and returns their sum. Our goal is to run this function from Python.
+
+```Fortran
+function add(a, b) result(result)
+    integer     :: a
+    integer     :: b
+    integer     :: result
+    result = a + b
+end function add
+```
+
 ## Generate Python module from Fortran code
 
 Change to the `fortran` and build a Python extension module from fortran code:
@@ -25,13 +38,19 @@ Change to the `fortran` and build a Python extension module from fortran code:
 f2py -c -m add_two_numbers add_two_numbers.f90
 ```
 
+It will generate a module file. To check that it is working, open python console from the `fortran` directory:
+
+
+```
+python3
+>>> import add_two_numbers
+>>> add_two_numbers.add(1,41)
+42
+```
+
 ## Run the unit test
 
-The Fortran code is executed from the unit test. To run the test, enter from the root directory:
-
-```
-pytest
-```
+The Fortran code is also executed from the unit test. To run the test, run `pytest` from the root directory.
 
 ## Reference
 
