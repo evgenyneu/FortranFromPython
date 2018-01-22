@@ -1,4 +1,4 @@
-# Running Fortran function from Python
+# Running a Fortran function from Python
 
 This example shows how to run a Fortran function from Python.
 
