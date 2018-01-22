@@ -47,7 +47,7 @@ f2py -c -m add_two_numbers add_two_numbers.f90
 
 ## Run Fortran code from Python
 
-`f2py` utility will generate a module file. To check that it is working, open python console from the `fortran` directory:
+The `f2py` utility will generate a module file. To check that it is working, open python console from the `fortran` directory:
 
 
 ```
