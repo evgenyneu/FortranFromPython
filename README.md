@@ -55,9 +55,13 @@ python3
 
 The Fortran code is also executed from the unit test.
 
-* Install `pytest`: `pip3 install pytest`.
+Install `pytest`:
 
-* Run the test with `pytest` command from the root directory of this repository.
+```
+pip3 install pytest
+```
+
+From the root directory of this repository, run `pytest`.
 
 ## Reference
 
