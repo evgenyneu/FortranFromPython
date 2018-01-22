@@ -5,23 +5,21 @@ This is a collection of examples that show how to run Fortran code from Python.
 
 ## Setup
 
-* Install `scipy` package that includes `f2spy`:
+Install `scipy` package that includes `f2spy`:
 
 ```
 pip3 install scipy
 ```
 
-* Install `pytest` to run the tests:
+Install `pytest` to run the tests:
 
 ```
 pip3 install pytest
 ```
 
-## Generate Python module from fortran code
+## Generate Python module from Fortran code
 
-* Change to Fortran directory: `cd fortran`.
-
-* Build a Python extension module from fortran code:
+Change to the `fortran` and build a Python extension module from fortran code:
 
 ```
 f2py -c -m add_two_numbers add_two_numbers.f90
