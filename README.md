@@ -11,7 +11,7 @@ Install `scipy` package. It includes the `f2py` utility that we will use.
 pip3 install scipy
 ```
 
-Install `pytest` to run the tests:
+Install `pytest` to run the unit tests:
 
 ```
 pip3 install pytest
