@@ -5,7 +5,7 @@ This is a collection of examples that show how to run Fortran code from Python.
 
 ## Setup
 
-Install `scipy` package that includes `f2py` utility:
+Install `scipy` package that includes the `f2py` utility:
 
 ```
 pip3 install scipy
