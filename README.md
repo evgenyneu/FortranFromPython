@@ -56,5 +56,5 @@ The Fortran code is also executed from the unit test. To run the test, run `pyte
 
 ## Reference
 
-* [Using Python as glue from scipy.org](https://docs.scipy.org/doc/numpy-1.10.0/user/c-info.python-as-glue.html)
+* [Using Python as glue](https://docs.scipy.org/doc/numpy-1.10.0/user/c-info.python-as-glue.html)
 
