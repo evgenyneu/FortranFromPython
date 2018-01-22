@@ -61,7 +61,11 @@ Install `pytest`:
 pip3 install pytest
 ```
 
-From the root directory of this repository, run `pytest`.
+From the root directory of this repository, run
+
+```
+pytest
+```
 
 ## Reference
 
