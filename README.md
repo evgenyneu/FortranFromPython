@@ -17,6 +17,13 @@ Install `pytest` to run the unit tests:
 pip3 install pytest
 ```
 
+Clone this repository.
+
+```
+git clone https://github.com/evgenyneu/FortranFromPython.git
+cd FortranFromPython
+```
+
 ## Fortran function
 
 We have a simple Fortran function that receives two integer numbers and returns their sum. Our goal is to run this function from Python.
