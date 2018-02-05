@@ -50,7 +50,7 @@ You can see that utility belongs to Python 3.6, which means we use the correct o
 
 ## Generate Python module from Fortran code
 
-Change to the `fortran` directory of this FortranFromPython repository that you cloned and build a Python extension module:
+Change to the `fortran` directory of this repository and build a Python extension module:
 
 ```
 f2py -c -m add_two_numbers add_two_numbers.f90
@@ -58,7 +58,7 @@ f2py -c -m add_two_numbers add_two_numbers.f90
 
 ## Run Fortran code from Python
 
-The `f2py` utility will generate a module file. To check that it is working, open python console from the `fortran` directory:
+The `f2py` utility will generate a module file that can be imported into Python code. To check that it is working, open python console from the `fortran` directory:
 
 
 ```
