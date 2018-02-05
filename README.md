@@ -31,6 +31,23 @@ function add(a, b) result(result)
 end function add
 ```
 
+## Verify f2py utility version
+
+You've installed `scipy` package that includes the `f2py`. There are two incompatible versions of Python: Python2 and Python3. We need to make sure that when we type `f2py` command it executes the Python3 version of this utility.
+
+```
+which f2py
+```
+
+It will show the location of the utility, usually something like
+
+```
+/Library/Frameworks/Python.framework/Versions/3.6/bin/f2py
+```
+
+You can see that utility belongs to Python 3.6, which means we use the correct one. If the returned location corresponds to Python 2, then you will need to look at your `.bash_profile` (on Mac) and add Python3 binaries directory to the PATH variable.
+
+
 ## Generate Python module from Fortran code
 
 Change to the `fortran` directory of this FortranFromPython repository that you cloned and build a Python extension module:
